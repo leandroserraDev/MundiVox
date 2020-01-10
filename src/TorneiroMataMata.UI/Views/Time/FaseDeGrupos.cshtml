@@ -1,0 +1,196 @@
+﻿@model IEnumerable<TorneiroMataMata.UI.Models.ViewModels.TimeViewModel.TimeIndexViewModel>
+
+@{
+    ViewBag.Title = "Fase de grupos";
+}
+
+
+
+<div class="panel-primary" style="border:solid; margin-top:8px;">
+    <div class="panel-heading">
+        <h1>Fase de Grupos</h1>
+    </div>
+    <div class="panel-body">
+        <div style="margin:3px; border:2px solid;">
+            <div class="panel-heading" style="text-align:center; color:Black;">
+                <h3>Grupo A</h3>
+            </div>
+
+            <table class="table table-striped">
+                <tr>
+                    
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Gol)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SaldoGols)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model.Where(x => x.Grupo.Nome.Contains("Grupo A")))
+                {
+                    <tr>
+                     
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gol)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SaldoGols)
+                        </td>
+                   
+                        <td>
+                            @Html.ActionLink("Avançar time", "AvancarTime", new { id = item.TimeId }, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Editar", "Edit", new { id = item.TimeId}, new { @class ="btn btn-warning"})
+                            @Html.ActionLink("Detalhes", "Details", new { id = item.TimeId }, new { @class = "btn btn-info" })
+                            @Html.ActionLink("Deletar", "Delete", new { id = item.TimeId }, new { @class = "btn btn-danger" })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+  
+
+        <div style="margin:3px; border:2px solid;">
+    <div class="panel-heading" style="text-align:center; color:Black;">
+        <h3>Grupo B</h3>
+    </div>
+
+    <table class="table table-striped">
+        <tr>
+          
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaldoGols)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Where(x => x.Grupo.Nome.Contains("Grupo B")))
+        {
+            <tr>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SaldoGols)
+                </td>
+                <td>
+                    @Html.ActionLink("Avançar time", "AvancarTime", new { id = item.TimeId }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Editar", "Edit", new { id = item.TimeId }, new { @class = "btn btn-warning" })
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.TimeId }, new { @class = "btn btn-info" })
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.TimeId }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+         <div style="margin:3px; border:2px solid;">
+             <div class="panel-heading" style="text-align:center; color:Black;">
+                 <h3>Grupo C</h3>
+             </div>
+
+             <table class="table table-striped">
+                 <tr>
+                    
+                     <th>
+                         @Html.DisplayNameFor(model => model.Nome)
+                     </th>
+                     <th>
+                         @Html.DisplayNameFor(model => model.Gol)
+                     </th>
+                     <th>
+                         @Html.DisplayNameFor(model => model.SaldoGols)
+                     </th>
+                     <th></th>
+                 </tr>
+
+                 @foreach (var item in Model.Where(x => x.Grupo.Nome.Contains("Grupo C")))
+                 {
+                     <tr>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Nome)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Gol)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.SaldoGols)
+                         </td>
+                         <td>
+                             @Html.ActionLink("Avançar time", "AvancarTime", new { id = item.TimeId }, new { @class = "btn btn-primary" })
+                             @Html.ActionLink("Editar", "Edit", new { id = item.TimeId }, new { @class = "btn btn-warning" })
+                             @Html.ActionLink("Detalhes", "Details", new { id = item.TimeId }, new { @class = "btn btn-info" })
+                             @Html.ActionLink("Deletar", "Delete", new { id = item.TimeId }, new { @class = "btn btn-danger" })
+                         </td>
+                     </tr>
+                 }
+
+             </table>
+         </div>
+         <div style="margin:3px; border:2px solid;">
+             <div class="panel-heading" style="text-align:center; color:Black;">
+                 <h3>Grupo D</h3>
+             </div>
+
+             <table class="table table-striped">
+                 <tr>
+                    
+                     <th>
+                         @Html.DisplayNameFor(model => model.Nome)
+                     </th>
+                     <th>
+                         @Html.DisplayNameFor(model => model.Gol)
+                     </th>
+                     <th>
+                         @Html.DisplayNameFor(model => model.SaldoGols)
+                     </th>
+                     <th></th>
+                 </tr>
+
+                 @foreach (var item in Model.Where(x => x.Grupo.Nome.Contains("Grupo D")))
+                 {
+                     <tr>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Nome)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Gol)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.SaldoGols)
+                         </td>
+                         <td>
+                             @Html.ActionLink("Avançar time", "AvancarTime", new { id = item.TimeId }, new { @class = "btn btn-primary" })
+                             @Html.ActionLink("Editar", "Edit", new { id = item.TimeId }, new { @class = "btn btn-warning" })
+                             @Html.ActionLink("Detalhes", "Details", new { id = item.TimeId }, new { @class = "btn btn-info" })
+                             @Html.ActionLink("Deletar", "Delete", new { id = item.TimeId }, new { @class = "btn btn-danger" })
+                         </td>
+                     </tr>
+                 }
+
+             </table>
+
+
+         </div>
+    </div>
+</div>

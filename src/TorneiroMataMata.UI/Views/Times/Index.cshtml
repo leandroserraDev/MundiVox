@@ -1,0 +1,51 @@
+﻿@model IEnumerable<TorneiroMataMata.Domain.Entities.Time>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Grupo.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaldoGols)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grupo.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SaldoGols)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TimeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TimeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TimeId })
+        </td>
+    </tr>
+}
+
+</table>

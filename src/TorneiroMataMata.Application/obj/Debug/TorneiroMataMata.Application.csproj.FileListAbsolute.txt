@@ -1,0 +1,8 @@
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\bin\Debug\TorneiroMataMata.Application.dll
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\bin\Debug\TorneiroMataMata.Application.pdb
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\bin\Debug\TorneiroMataMata.Domain.dll
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\bin\Debug\TorneiroMataMata.Domain.pdb
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\obj\Debug\TorneiroMataMata.Application.csprojAssemblyReference.cache
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\obj\Debug\TorneiroMataMata.Application.csproj.CopyComplete
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\obj\Debug\TorneiroMataMata.Application.dll
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Application\obj\Debug\TorneiroMataMata.Application.pdb

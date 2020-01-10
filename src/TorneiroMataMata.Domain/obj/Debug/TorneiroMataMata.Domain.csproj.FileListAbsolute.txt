@@ -1,0 +1,4 @@
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Domain\bin\Debug\TorneiroMataMata.Domain.dll
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Domain\bin\Debug\TorneiroMataMata.Domain.pdb
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Domain\obj\Debug\TorneiroMataMata.Domain.dll
+C:\Users\leand\Desktop\TorneiroMataMata\src\TorneiroMataMata.Domain\obj\Debug\TorneiroMataMata.Domain.pdb
